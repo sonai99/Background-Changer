@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('./pexels-roberto-nickson-2559941.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .back-frem {
+        width: 18rem;
+        height: 6rem;
+        background: white;
+        border-radius: 23px;
+        position: fixed;
+        bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;  
+        top:0;
+        right:0;
+        margin:10px;
+    }   
+    .back-frem .back-chang{
+        width: 91px;
+        height: 91px;
+        background: wheat;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 30px;
+        padding-right:5px;
+        margin:5px;
+    }
+</style>
+
+<body>
+    <div class="back-frem">
+
+    <div class="back-chang" onclick="background1()"> <img src="https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+    <div class="back-chang" onclick="background2()"> <img src="https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+    <div class="back-chang" onclick="background3()"> <img src="https://images.pexels.com/photos/1134166/pexels-photo-1134166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+
+    </div>
+</body>
+<script>
+    function background1() {
+        document.querySelector('body').style.background = "url(https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center center / cover";
+    }
+    function background2() {
+        document.querySelector('body').style.background = "url(https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center center / cover";
+    }
+    function background3() {
+        document.querySelector('body').style.background = "url(https://images.pexels.com/photos/1134166/pexels-photo-1134166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center center / cover";
+    }
+</script>
+</html>
